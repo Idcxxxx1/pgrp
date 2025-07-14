@@ -1,4 +1,5 @@
-/* General Reset */
+/* styles.css */
+
 body {
   margin: 0;
   padding: 0;
@@ -11,20 +12,21 @@ body {
   position: relative;
 }
 
+/* Stars background (brighter, clear) */
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://i.imgur.com/lYWtFZ9.png') repeat;
+  background: url('https://i.imgur.com/NM7Gh5H.jpg') repeat;
   background-size: cover;
-  opacity: 0.1;
+  opacity: 0.2;
   z-index: 0;
 }
 
-/* Container Layout */
+/* Main content container */
 .container {
   position: relative;
   z-index: 1;
@@ -36,7 +38,7 @@ body::before {
   box-shadow: 0 0 12px rgba(255, 152, 61, 0.4);
 }
 
-/* Typography */
+/* Text Colors */
 h1, h2, h3 {
   color: #ff983d;
 }
@@ -100,6 +102,7 @@ nav a:hover {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   text-align: center;
+  pointer-events: auto;
 }
 
 .button:hover {
@@ -112,7 +115,6 @@ nav a:hover {
   transform: scale(0.97);
 }
 
-/* Button Container */
 .buttons {
   display: flex;
   justify-content: center;
@@ -121,7 +123,7 @@ nav a:hover {
   margin-top: 2rem;
 }
 
-/* Feature Cards */
+/* Features Section */
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +157,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 @media screen and (max-width: 600px) {
   .container {
     padding: 40px 15px;
