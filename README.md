@@ -1,2 +1,0 @@
-# pgrp
-PGRP Bot
