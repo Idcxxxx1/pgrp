@@ -90,3 +90,76 @@ nav a:hover {
     gap: 10px;
   }
 }
+/* Add to your existing styles.css */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 40px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5em;
+  color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: #ff983d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #ff983d70;
+}
+
+.button:hover {
+  background: #ff7a00;
+  box-shadow: 0 0 15px #ff983d;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.feature-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px rgba(255, 152, 61, 0.2);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+}
