@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* General Reset */
 body {
   margin: 0;
   padding: 0;
@@ -25,6 +24,7 @@ body::before {
   z-index: 0;
 }
 
+/* Container Layout */
 .container {
   position: relative;
   z-index: 1;
@@ -36,10 +36,12 @@ body::before {
   box-shadow: 0 0 12px rgba(255, 152, 61, 0.4);
 }
 
+/* Typography */
 h1, h2, h3 {
   color: #ff983d;
 }
 
+/* Navigation Bar */
 nav {
   display: flex;
   justify-content: center;
@@ -62,36 +64,7 @@ nav a:hover {
   color: #ff983d;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #ff983d;
-  color: #000;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #e67b2e;
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 40px 15px;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-/* Add to your existing styles.css */
-
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 100px 20px 40px;
@@ -110,28 +83,45 @@ nav a:hover {
   color: #ccc;
 }
 
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff983d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px #ff983d70;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #ff7a00;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #ff983d;
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+/* Button Container */
 .buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
-.button {
-  padding: 12px 28px;
-  border-radius: 8px;
-  background: #ff983d;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px #ff983d70;
-}
-
-.button:hover {
-  background: #ff7a00;
-  box-shadow: 0 0 15px #ff983d;
-}
-
+/* Feature Cards */
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -157,9 +147,31 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
+/* Footer */
 footer {
   text-align: center;
   color: #888;
   padding: 30px 10px;
   font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 40px 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 14px 0;
+  }
 }
