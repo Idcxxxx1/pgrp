@@ -1,5 +1,7 @@
 /* styles.css */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -193,5 +195,33 @@ footer {
   .button {
     width: 100%;
     padding: 14px 0;
+  }
+}
+.text-page {
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 30px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 152, 61, 0.2);
+  color: #f1f1f1;
+  text-align: left;
+  line-height: 1.7;
+  backdrop-filter: blur(5px);
+}
+
+.text-page h1 {
+  color: #ff983d;
+  margin-bottom: 20px;
+}
+
+.text-page p {
+  margin-bottom: 1.2em;
+}
+
+@media screen and (max-width: 600px) {
+  .text-page {
+    padding: 25px 20px;
+    margin: 30px 15px;
   }
 }
